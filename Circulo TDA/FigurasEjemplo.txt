@@ -1,0 +1,2 @@
+círculo rojo 2,5 
+cubo azul 4

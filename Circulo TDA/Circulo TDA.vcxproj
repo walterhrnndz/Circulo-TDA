@@ -147,11 +147,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cilindro.cpp" />
     <ClCompile Include="Circulo.cpp" />
+    <ClCompile Include="Cubo.cpp" />
+    <ClCompile Include="LeerArchivo.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Rectangulo.cpp" />
+    <ClCompile Include="Triangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cilindro.h" />
     <ClInclude Include="Circulo.h" />
+    <ClInclude Include="Cubo.h" />
+    <ClInclude Include="LeerArchivo.h" />
+    <ClInclude Include="Rectangulo.h" />
+    <ClInclude Include="Triangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
