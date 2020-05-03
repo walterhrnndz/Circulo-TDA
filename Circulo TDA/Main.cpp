@@ -16,21 +16,22 @@ using namespace std;
 
 int main()
 {
-    /*Circulo circulo;
+    Circulo circulo;
     bool salir = false;
     int opcion = -1;
+    float radio;
 
     lectura();
 
-    system("pause");
-
-    system("cls");
+    std::system("cls");
 
     cout << "Ingrese el radio:" << endl;
-    cin >> circulo.radio;
+    cin >> radio;
+
+    circulo = crearCirculo(radio, "rojo");
 
     while(!salir){
-        system("cls");
+        std::system("cls");
         cout << "Ingrese opcion:" << endl;
         cout << "1 - Calcular superficie" << endl;
         cout << "2 - Calcular perimetro" << endl;
@@ -44,13 +45,14 @@ int main()
             case 0: salir = true;
                 break;
             case 1: cout << "La superficie es: " << calcularSuperficie(circulo) << endl;
+                cout << "El color es: " << getColor(circulo) << endl;
                 break;
             case 2: cout << "El perimetro es: " << calcularPerimetro(circulo) << endl;
                 break;
             case 3: cout << "El diametro es: " << calcularDiametro(circulo) << endl;
                 break;
             case 4: cout << "Ingrese el angulo: " << endl;
-                    cin >> circulo.angulo;
+                    //cin >> circulo.angulo;
                     cout << "La longitud de arco es: " << calcularLongitudArco(circulo) << endl;
                 break;
             default: //system("cls");
@@ -58,10 +60,11 @@ int main()
                      cin >> opcion;
                 break;
         }
-        system("pause");
-    }*/
+        std::system("pause");
+    }
 
-    lectura();
+    free(circulo);
+    //lectura();
 
     return 0;
 }
